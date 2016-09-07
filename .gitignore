@@ -61,3 +61,7 @@ hs_err_pid*
 /spring-boot-sample.iml
 /.idea/
 /spring-boot-sample-parent/spring-boot-sample-parent.iml
+/spring-boot-starter/spring-boot-starter.iml
+
+*.iml
+/spring-boot-starter/target/
