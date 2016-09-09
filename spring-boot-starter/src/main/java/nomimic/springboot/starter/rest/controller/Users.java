@@ -1,5 +1,6 @@
 package nomimic.springboot.starter.rest.controller;
 
+import nomimic.springboot.starter.rest.message.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,11 +14,12 @@ import java.util.List;
 public class Users {
 
     @GetMapping(name = "/api/users")
-    public List<String> getUsers() {
-        List<String> users = new ArrayList<String>();
+    public List<User> getUsers() {
+        List<User> users = new ArrayList<User>();
 
-        users.add("KIM");
-        users.add("LEE");
+        users.add(new User("KIM",10));
+        users.add(new User("LEE",10));
+
         return users;
     }
 }
