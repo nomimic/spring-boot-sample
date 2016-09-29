@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 public class Users {
 
-    @GetMapping(name = "/api/users")
+    @GetMapping(value = "/api/users")
     public List<User> getUsers() {
         List<User> users = new ArrayList<User>();
 
